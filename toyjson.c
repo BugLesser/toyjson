@@ -283,7 +283,7 @@ int jsonobject_format_bool(JsonObject* object, char* str) {
 
 int jsonobject_format_number(JsonObject* object, char* str) {
     if((int)object->vNumber == object->vNumber) {
-        return sprintf(str, "%d", object->vNumber);
+        return sprintf(str, "%d", (int)(object->vNumber));
     }
     return sprintf(str, "%f", object->vNumber);
 }
