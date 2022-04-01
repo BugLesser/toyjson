@@ -18,7 +18,7 @@ typedef struct JsonObject {
     struct JsonObject* prev;
     struct JsonObject* next;
     union {
-        struct JsonObject* vChild; /* array and object child head */
+        struct JsonObject* vChild;
         int vBool;
         double vNumber;
         char* vString;
