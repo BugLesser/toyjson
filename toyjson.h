@@ -28,8 +28,8 @@ typedef struct JsonObject {
 
 typedef struct JsonParser {
     const char* content;
-    size_t length;
-    size_t index;
+    int length;
+    int index;
 } JsonParser;
 
 
